@@ -28,6 +28,7 @@
     <!-- Main CSS File -->
     <link href="../static/assets/css/main.css" rel="stylesheet">
 
+
     <!-- =======================================================
     * Template Name: Arsha
     * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -89,12 +90,6 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
-
-        <!-- 显示增强后的图像 -->
-        <div id="enhanced-image" class="mt-4">
-            <!-- 图像增强结果会在这里展示 -->
-        </div>
 
         <div class="container">
             <div class="row gy-4">
@@ -1162,11 +1157,41 @@
 <!-- Main JS File -->
 <script src="../static/assets/js/main.js"></script>
 
+<!--<script>-->
+<!--    document.getElementById('start-enhancement-btn').addEventListener('click', function () {-->
+<!--        // 手动触发表单提交-->
+<!--        document.getElementById('enhance-form').submit();-->
+<!--    });-->
+<!--</script>-->
 <script>
-    document.getElementById('start-enhancement-btn').addEventListener('click', function () {
-        // 手动触发表单提交
-        document.getElementById('enhance-form').submit();
+document.getElementById('start-enhancement-btn').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    // 获取表单数据
+    var formData = new FormData(document.getElementById('enhance-form'));
+
+    // 发送 AJAX 请求
+    fetch('/enhance', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())  // 假设返回的是 JSON 格式，包含图像 URL
+    .then(data => {
+        console.log("Response data:", data);  // 输出服务器返回的数据
+
+        // 检查是否返回了有效的图像 URL
+        if (data.image_url) {
+            const enhancedImageUrl = data.image_url;
+            document.querySelector('.hero-img img').src = enhancedImageUrl;
+        } else {
+            console.error("No image_url found in the response");
+        }
+    })
+    .catch(error => {
+        console.error('Error during the enhancement process:', error);
     });
+});
+
 </script>
 
 </body>
