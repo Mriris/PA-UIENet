@@ -5,6 +5,7 @@
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv7" />
       <excludeFolder url="file://$MODULE_DIR$/venv12" />
+      <excludeFolder url="file://$MODULE_DIR$/saved_models" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.12 (U-shape_Transformer_for_Underwater_Image_Enhancement-main)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

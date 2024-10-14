@@ -89,6 +89,19 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
+        <!-- 图像增强上传表单 -->
+        <form action="/enhance" method="POST" enctype="multipart/form-data" id="enhance-form">
+            <div class="form-group">
+                <label for="image-upload">上传图像进行增强:</label>
+                <input type="file" name="image" id="image-upload" accept="image/*" class="form-control">
+            </div>
+            <button type="submit" class="btn-getstarted">开始增强</button>
+        </form>
+
+        <!-- 显示增强后的图像 -->
+        <div id="enhanced-image">
+            <!-- 图像增强结果会在这里展示 -->
+        </div>
 
         <div class="container">
             <div class="row gy-4">
@@ -153,14 +166,22 @@
                     }
                 </script>
                 <div class="swiper-wrapper align-items-center">
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-1.png" class="img-fluid"
+                                                   alt=""></div>
+                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-2.png" class="img-fluid"
+                                                   alt=""></div>
+                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-3.png" class="img-fluid"
+                                                   alt=""></div>
+                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-4.png" class="img-fluid"
+                                                   alt=""></div>
+                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-5.png" class="img-fluid"
+                                                   alt=""></div>
+                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-6.png" class="img-fluid"
+                                                   alt=""></div>
+                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-7.png" class="img-fluid"
+                                                   alt=""></div>
+                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-8.png" class="img-fluid"
+                                                   alt=""></div>
                 </div>
             </div>
 
@@ -267,7 +288,8 @@
                 </div>
 
                 <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-                    <img src="../static/assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="../static/assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in"
+                         data-aos-delay="100">
                 </div>
             </div>
 
@@ -434,7 +456,8 @@
                 <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid"
+                             alt="">
                         <div class="portfolio-info">
                             <h4>App 1</h4>
                             <p>Lorem ipsum, dolor sit</p>
@@ -447,7 +470,8 @@
                     </div><!-- End Portfolio Item -->
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid"
+                             alt="">
                         <div class="portfolio-info">
                             <h4>Product 1</h4>
                             <p>Lorem ipsum, dolor sit</p>
@@ -460,7 +484,8 @@
                     </div><!-- End Portfolio Item -->
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid"
+                             alt="">
                         <div class="portfolio-info">
                             <h4>Branding 1</h4>
                             <p>Lorem ipsum, dolor sit</p>
@@ -473,7 +498,8 @@
                     </div><!-- End Portfolio Item -->
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid"
+                             alt="">
                         <div class="portfolio-info">
                             <h4>App 2</h4>
                             <p>Lorem ipsum, dolor sit</p>
@@ -486,7 +512,8 @@
                     </div><!-- End Portfolio Item -->
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid"
+                             alt="">
                         <div class="portfolio-info">
                             <h4>Product 2</h4>
                             <p>Lorem ipsum, dolor sit</p>
@@ -499,7 +526,8 @@
                     </div><!-- End Portfolio Item -->
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid"
+                             alt="">
                         <div class="portfolio-info">
                             <h4>Branding 2</h4>
                             <p>Lorem ipsum, dolor sit</p>
@@ -512,7 +540,8 @@
                     </div><!-- End Portfolio Item -->
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid"
+                             alt="">
                         <div class="portfolio-info">
                             <h4>App 3</h4>
                             <p>Lorem ipsum, dolor sit</p>
@@ -525,7 +554,8 @@
                     </div><!-- End Portfolio Item -->
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid"
+                             alt="">
                         <div class="portfolio-info">
                             <h4>Product 3</h4>
                             <p>Lorem ipsum, dolor sit</p>
@@ -538,7 +568,8 @@
                     </div><!-- End Portfolio Item -->
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid"
+                             alt="">
                         <div class="portfolio-info">
                             <h4>Branding 3</h4>
                             <p>Lorem ipsum, dolor sit</p>
@@ -740,7 +771,8 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="../static/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                            <img src="../static/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
+                                 alt="">
                             <h3>Saul Goodman</h3>
                             <h4>Ceo &amp; Founder</h4>
                             <div class="stars">
@@ -758,7 +790,8 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="../static/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                            <img src="../static/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img"
+                                 alt="">
                             <h3>Sara Wilsson</h3>
                             <h4>Designer</h4>
                             <div class="stars">
@@ -776,7 +809,8 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="../static/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                            <img src="../static/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img"
+                                 alt="">
                             <h3>Jena Karlis</h3>
                             <h4>Store Owner</h4>
                             <div class="stars">
@@ -794,7 +828,8 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="../static/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                            <img src="../static/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img"
+                                 alt="">
                             <h3>Matt Brandon</h3>
                             <h4>Freelancer</h4>
                             <div class="stars">
@@ -812,7 +847,8 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="../static/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                            <img src="../static/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img"
+                                 alt="">
                             <h3>John Larson</h3>
                             <h4>Entrepreneur</h4>
                             <div class="stars">
