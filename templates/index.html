@@ -93,6 +93,7 @@
 
         <div class="container">
             <div class="row gy-4">
+                <!-- 左侧，上传文件和操作按钮 -->
                 <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
                     <h1>Better Solutions For Your Business</h1>
                     <p>We are team of talented designers making websites with Bootstrap</p>
@@ -101,16 +102,14 @@
                     <form action="/enhance" method="POST" enctype="multipart/form-data" id="enhance-form"
                           class="upload-form d-flex flex-column align-items-center justify-content-center">
                         <div class="form-group w-100 d-flex">
-                            <!-- 移除了多余的对齐类，确保文件输入框占据合理空间 -->
                             <input type="file" name="image" id="image-upload" accept="image/*"
                                    class="form-control w-50">
                         </div>
                     </form>
 
+                    <!-- 按钮 -->
                     <div class="d-flex mt-3">
-                        <!-- 使用“开始增强”按钮触发表单提交 -->
-                        <a href="javascript:void(0);" class="btn-get-started me-3"
-                           id="start-enhancement-btn">开始增强</a>
+                        <a href="javascript:void(0);" class="btn-get-started me-3" id="action-btn">确定选择</a>
 
                         <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
                            class="glightbox btn-watch-video d-flex align-items-center">
@@ -118,14 +117,20 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- 右侧，图片展示 -->
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                    <img src="../static/assets/img/hero-img.png" class="img-fluid animated" alt="">
+                    <img id="image-display" src="../static/assets/img/hero-img.png" class="img-fluid animated"
+                         alt="Unprocessed Image">
+                    <!-- 增强后的图片，默认隐藏 -->
+                    <img id="enhanced-image-display" src="" style="margin-left: 20px;" class="img-fluid animated d-none"
+                         alt="Enhanced Image">
                 </div>
             </div>
         </div>
 
-
     </section><!-- /Hero Section -->
+
 
     <!-- Clients Section -->
     <section id="clients" class="clients section light-background">
@@ -1164,33 +1169,86 @@
 <!--    });-->
 <!--</script>-->
 <script>
-document.getElementById('start-enhancement-btn').addEventListener('click', function(event) {
-    event.preventDefault();
+    let currentStep = 'select';
 
-    // 获取表单数据
-    var formData = new FormData(document.getElementById('enhance-form'));
+    document.getElementById('action-btn').addEventListener('click', function (event) {
+        event.preventDefault();
 
-    // 发送 AJAX 请求
-    fetch('/enhance', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.json())  // 假设返回的是 JSON 格式，包含图像 URL
-    .then(data => {
-        console.log("Response data:", data);  // 输出服务器返回的数据
-
-        // 检查是否返回了有效的图像 URL
-        if (data.image_url) {
-            const enhancedImageUrl = data.image_url;
-            document.querySelector('.hero-img img').src = enhancedImageUrl;
-        } else {
-            console.error("No image_url found in the response");
+        if (currentStep === 'select') {
+            // 第一次点击“确定选择”
+            handleFileUpload();
+        } else if (currentStep === 'enhance') {
+            // 第二次点击“开始增强”
+            startEnhancement();
+        } else if (currentStep === 'reset') {
+            // 第三次点击“重置”
+            resetPage();
         }
-    })
-    .catch(error => {
-        console.error('Error during the enhancement process:', error);
     });
-});
+
+    // 处理文件上传并显示上传的图片
+    function handleFileUpload() {
+        const fileInput = document.getElementById('image-upload');
+        const file = fileInput.files[0];
+
+        if (file) {
+            // 显示上传的图片
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById('image-display').src = e.target.result;
+                console.log('图片成功上传并显示。');
+            };
+            reader.readAsDataURL(file);
+
+            // 修改按钮为“开始增强”
+            document.getElementById('action-btn').textContent = '开始增强';
+            currentStep = 'enhance';  // 更新按钮状态
+        } else {
+            alert("请选择一张图片进行上传！");
+        }
+    }
+
+    // 发送请求进行增强，并显示增强后的图像
+    function startEnhancement() {
+        const formData = new FormData(document.getElementById('enhance-form'));
+
+        fetch('/enhance', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.image_url) {
+                    const enhancedImageUrl = data.image_url;
+                    // 设置未处理和增强后的图像大小一致
+                    const unprocessedImage = document.getElementById('image-display');
+                    const enhancedImage = document.getElementById('enhanced-image-display');
+
+                    // 设置宽度和高度一致
+                    unprocessedImage.style.width = "300px";
+                    unprocessedImage.style.height = "300px";
+                    enhancedImage.style.width = "300px";
+                    enhancedImage.style.height = "300px";
+
+                    // 显示增强后的图片
+                    enhancedImage.src = enhancedImageUrl;
+                    enhancedImage.classList.remove('d-none');
+                    // 修改按钮为“重置”
+                    document.getElementById('action-btn').textContent = '重置';
+                    currentStep = 'reset';  // 更新按钮状态
+                } else {
+                    console.error("未返回增强后的图像 URL");
+                }
+            })
+            .catch(error => {
+                console.error('增强图像时出错:', error);
+            });
+    }
+
+    // 刷新页面
+    function resetPage() {
+        window.location.reload();  // 通过重载页面实现“重置”
+    }
 
 </script>
 

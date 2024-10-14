@@ -51,7 +51,17 @@ def enhance_image():
     # 保存增强后的图像
     enhanced_filename = 'enhanced_' + filename
     enhanced_path = os.path.join(app.config['ENHANCED_FOLDER'], enhanced_filename)
+    # 打印文件保存路径进行调试
+    print(f"Saving enhanced image to: {enhanced_path}")
+
+    # 保存增强后的图像
     save_image(enhanced_img_tensor[3], enhanced_path)
+
+    # 确认文件是否保存成功
+    if os.path.exists(enhanced_path):
+        print("File saved successfully!")
+    else:
+        print("Error: File not saved!")
 
     # 返回增强后的图像路径
     return jsonify({'image_url': '/static/enhanced/' + enhanced_filename})
