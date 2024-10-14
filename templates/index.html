@@ -89,17 +89,10 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-        <!-- 图像增强上传表单 -->
-        <form action="/enhance" method="POST" enctype="multipart/form-data" id="enhance-form">
-            <div class="form-group">
-                <label for="image-upload">上传图像进行增强:</label>
-                <input type="file" name="image" id="image-upload" accept="image/*" class="form-control">
-            </div>
-            <button type="submit" class="btn-getstarted">开始增强</button>
-        </form>
+
 
         <!-- 显示增强后的图像 -->
-        <div id="enhanced-image">
+        <div id="enhanced-image" class="mt-4">
             <!-- 图像增强结果会在这里展示 -->
         </div>
 
@@ -108,10 +101,26 @@
                 <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
                     <h1>Better Solutions For Your Business</h1>
                     <p>We are team of talented designers making websites with Bootstrap</p>
-                    <div class="d-flex">
-                        <a href="#about" class="btn-get-started">Get Started</a>
+
+                    <!-- 文件上传表单 -->
+                    <form action="/enhance" method="POST" enctype="multipart/form-data" id="enhance-form"
+                          class="upload-form d-flex flex-column align-items-center justify-content-center">
+                        <div class="form-group w-100 d-flex">
+                            <!-- 移除了多余的对齐类，确保文件输入框占据合理空间 -->
+                            <input type="file" name="image" id="image-upload" accept="image/*"
+                                   class="form-control w-50">
+                        </div>
+                    </form>
+
+                    <div class="d-flex mt-3">
+                        <!-- 使用“开始增强”按钮触发表单提交 -->
+                        <a href="javascript:void(0);" class="btn-get-started me-3"
+                           id="start-enhancement-btn">开始增强</a>
+
                         <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                           class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                           class="glightbox btn-watch-video d-flex align-items-center">
+                            <i class="bi bi-play-circle"></i><span>Watch Video</span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
@@ -119,6 +128,7 @@
                 </div>
             </div>
         </div>
+
 
     </section><!-- /Hero Section -->
 
@@ -1151,6 +1161,13 @@
 
 <!-- Main JS File -->
 <script src="../static/assets/js/main.js"></script>
+
+<script>
+    document.getElementById('start-enhancement-btn').addEventListener('click', function () {
+        // 手动触发表单提交
+        document.getElementById('enhance-form').submit();
+    });
+</script>
 
 </body>
 
