@@ -11,6 +11,9 @@
     <orderEntry type="jdk" jdkName="Python 3.12 (U-shape_Transformer_for_Underwater_Image_Enhancement-main)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="PackageRequirementsSettings">
+    <option name="versionSpecifier" value="强相等 (==x.y.z)" />
+  </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="GOOGLE" />
     <option name="myDocStringFormat" value="Google" />
