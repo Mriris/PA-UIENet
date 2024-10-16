@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Arsha Bootstrap Template</title>
+    <title>PA-UIENet</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -46,42 +46,20 @@
         <a href="index.html" class="logo d-flex align-items-center me-auto">
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <!-- <img src="../static/assets/img/logo.png" alt=""> -->
-            <h1 class="sitename">Arsha</h1>
+            <h1 class="sitename">PA-UIENet</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="#hero" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li class="dropdown"><a href="#"><span>Dropdown</span> <i
-                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
-                            <ul>
-                                <li><a href="#">Deep Dropdown 1</a></li>
-                                <li><a href="#">Deep Dropdown 2</a></li>
-                                <li><a href="#">Deep Dropdown 3</a></li>
-                                <li><a href="#">Deep Dropdown 4</a></li>
-                                <li><a href="#">Deep Dropdown 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
-                    </ul>
-                </li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hero" class="active">主页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#services">特点</a></li>
+                <li><a href="#team">团队介绍</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-getstarted" href="#about">Get Started</a>
+        <a class="btn-getstarted" href="#about">开始</a>
 
     </div>
 </header>
@@ -95,10 +73,10 @@
             <div class="row gy-4">
                 <!-- 左侧，上传文件和操作按钮 -->
                 <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-                    <h1>Better Solutions For Your Business</h1>
-                    <p>We are team of talented designers making websites with Bootstrap</p>
+                    <h1>基于物理感知双流网络的水下图像增强解决方案</h1>
+                    <p>解决水下图像中的颜色失真和对比度降低问题</p>
 
-                    <!-- 文件上传 -->
+                    <!-- 文件上传表单 -->
                     <form action="/enhance" method="POST" enctype="multipart/form-data" id="enhance-form"
                           class="upload-form d-flex flex-column align-items-center justify-content-center">
                         <div class="form-group w-100 d-flex">
@@ -111,10 +89,6 @@
                     <div class="d-flex mt-3">
                         <a href="javascript:void(0);" class="btn-get-started me-3" id="action-btn">确定选择</a>
 
-                        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                           class="glightbox btn-watch-video d-flex align-items-center">
-                            <i class="bi bi-play-circle"></i><span>Watch Video</span>
-                        </a>
                     </div>
                 </div>
 
@@ -175,24 +149,7 @@
                         }
                     }
                 </script>
-                <div class="swiper-wrapper align-items-center">
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-1.png" class="img-fluid"
-                                                   alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-2.png" class="img-fluid"
-                                                   alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-3.png" class="img-fluid"
-                                                   alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-4.png" class="img-fluid"
-                                                   alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-5.png" class="img-fluid"
-                                                   alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-6.png" class="img-fluid"
-                                                   alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-7.png" class="img-fluid"
-                                                   alt=""></div>
-                    <div class="swiper-slide"><img src="../static/assets/img/clients/client-8.png" class="img-fluid"
-                                                   alt=""></div>
-                </div>
+
             </div>
 
         </div>
@@ -204,7 +161,7 @@
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>About Us</h2>
+            <h2>关于我们</h2>
         </div><!-- End Section Title -->
 
         <div class="container">
@@ -213,25 +170,21 @@
 
                 <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore
-                        magna aliqua.
+                        我们是一个专注于水下图像增强技术研究的团队，开发了基于物理感知双流网络的PA-UIENet模型。我们的技术结合了水下成像物理特性与深度学习，能够显著提高水下图像的质量，解决颜色失真和对比度降低等问题。
                     </p>
                     <ul>
-                        <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                        <li><i class="bi bi-check2-circle"></i> <span>通过物理感知双流网络，精确估计水下环境中的光学特性。</span>
                         </li>
-                        <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+                        <li><i class="bi bi-check2-circle"></i> <span>使用深度学习技术应对多样化的水下场景。</span>
                         </li>
                         <li><i class="bi bi-check2-circle"></i>
-                            <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
+                            <span>在保持图像细节的同时，恢复真实的水下色彩。</span></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                    <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    <p>我们致力于提升水下图像的质量，使水下世界变得更加清晰和真实。我们的团队在图像增强、深度学习及实地应用方面拥有丰富经验，力求为行业提供最优质的技术解决方案 </p>
+                    <a href="#" class="read-more"><span>了解更多</span><i class="bi bi-arrow-right"></i></a>
                 </div>
 
             </div>
@@ -250,11 +203,10 @@
                 <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
 
                     <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-                        <h3><span>Eum ipsam laborum deleniti </span><strong>velit pariatur architecto aut nihil</strong>
+                        <h3><span>基于<strong>PA-UIENet</strong>的水下图像增强解决方案 </span>
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                            通过我们的PA-UIENet模型，结合物理感知和深度学习技术，显著提升水下图像质量，解决颜色失真和对比度下降问题，适用于水下探测、海洋保护等多领域。
                         </p>
                     </div>
 
@@ -262,33 +214,25 @@
 
                         <div class="faq-item faq-active">
 
-                            <h3><span>01</span> Non consectetur a erat nam at lectus urna duis?</h3>
+                            <h3><span>01</span> PA-UIENet模型的核心技术是什么？</h3>
                             <div class="faq-content">
-                                <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
-                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
-                                    purus non.</p>
+                                <p>PA-UIENet通过双流网络结构，精确估计水下环境中的光学退化参数，恢复图像的真实颜色和细节。</p>
                             </div>
                             <i class="faq-toggle bi bi-chevron-right"></i>
                         </div><!-- End Faq item-->
 
                         <div class="faq-item">
-                            <h3><span>02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                            <h3><span>02</span> 为什么选择我们的方法来处理水下图像？</h3>
                             <div class="faq-content">
-                                <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                    velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
-                                    donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                                    cursus turpis massa tincidunt dui.</p>
+                                <p>我们的方法结合了物理感知与深度学习，既能处理多样化的水下场景，又克服了数据不足的问题，具有广泛的应用潜力。</p>
                             </div>
                             <i class="faq-toggle bi bi-chevron-right"></i>
                         </div><!-- End Faq item-->
 
                         <div class="faq-item">
-                            <h3><span>03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                            <h3><span>03</span> PA-UIENet的应用领域有哪些？</h3>
                             <div class="faq-content">
-                                <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
-                                    pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
-                                    Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
-                                    tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                                <p>我们的技术可应用于水下探测、海洋研究、水下机器人导航、图像处理等多个领域，具有重要的实际价值。</p>
                             </div>
                             <i class="faq-toggle bi bi-chevron-right"></i>
                         </div><!-- End Faq item-->
@@ -307,75 +251,12 @@
 
     </section><!-- /Why Us Section -->
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row">
-
-                <div class="col-lg-6 d-flex align-items-center">
-                    <img src="../static/assets/img/skills.png" class="img-fluid" alt="">
-                </div>
-
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-
-                    <h3>Voluptatem dignissimos provident quasi corporis voluptas</h3>
-                    <p class="fst-italic">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
-
-                    <div class="skills-content skills-animation">
-
-                        <div class="progress">
-                            <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
-                        <div class="progress">
-                            <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
-                        <div class="progress">
-                            <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
-                        <div class="progress">
-                            <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
+    <section id="services" class="services section bg-black-background">
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Services</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            <h2>特点</h2>
+            <p>我们提供以下基于PA-UIENet的水下图像增强服务，帮助您在各种复杂的水下环境中提升图像质量：</p>
         </div><!-- End Section Title -->
 
         <div class="container">
@@ -385,32 +266,32 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-item position-relative">
                         <div class="icon"><i class="bi bi-activity icon"></i></div>
-                        <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        <h4><a href="" class="stretched-link">水下图像处理</a></h4>
+                        <p>我们的PA-UIENet模型能够精确处理水下图像，解决颜色失真和模糊问题，恢复图像的真实色彩。</p>
                     </div>
                 </div><!-- End Service Item -->
 
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-item position-relative">
                         <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-                        <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        <h4><a href="" class="stretched-link">深度学习模型开发</a></h4>
+                        <p>基于物理感知的双流网络架构，提供专业的深度学习模型开发服务，适用于水下环境的图像处理需求。</p>
                     </div>
                 </div><!-- End Service Item -->
 
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-item position-relative">
                         <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-                        <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                        <h4><a href="" class="stretched-link">数据分析与优化</a></h4>
+                        <p>提供水下数据分析与处理方案，通过先进的机器学习技术，帮助您优化图像质量并提升数据可用性。</p>
                     </div>
                 </div><!-- End Service Item -->
 
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-item position-relative">
                         <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-                        <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        <h4><a href="" class="stretched-link">定制化解决方案</a></h4>
+                        <p>针对特定的水下场景和需求，提供量身定制的图像增强与处理解决方案，确保最佳的应用效果。</p>
                     </div>
                 </div><!-- End Service Item -->
 
@@ -420,192 +301,13 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-        <img src="../static/assets/img/cta-bg.jpg" alt="">
-
-        <div class="container">
-
-            <div class="row" data-aos="zoom-in" data-aos-delay="100">
-                <div class="col-xl-9 text-center text-xl-start">
-                    <h3>Call To Action</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</p>
-                </div>
-                <div class="col-xl-3 cta-btn-container text-center">
-                    <a class="cta-btn align-middle" href="#">Call To Action</a>
-                </div>
-            </div>
-
-        </div>
-
-    </section><!-- /Call To Action Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Portfolio</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
-
-        <div class="container">
-
-            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-                <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-app">App</li>
-                    <li data-filter=".filter-product">Card</li>
-                    <li data-filter=".filter-branding">Web</li>
-                </ul><!-- End Portfolio Filters -->
-
-                <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid"
-                             alt="">
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="../static/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1"
-                               data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid"
-                             alt="">
-                        <div class="portfolio-info">
-                            <h4>Product 1</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="../static/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
-                               data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid"
-                             alt="">
-                        <div class="portfolio-info">
-                            <h4>Branding 1</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="../static/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
-                               data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid"
-                             alt="">
-                        <div class="portfolio-info">
-                            <h4>App 2</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="../static/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2"
-                               data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid"
-                             alt="">
-                        <div class="portfolio-info">
-                            <h4>Product 2</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="../static/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2"
-                               data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid"
-                             alt="">
-                        <div class="portfolio-info">
-                            <h4>Branding 2</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="../static/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
-                               data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid"
-                             alt="">
-                        <div class="portfolio-info">
-                            <h4>App 3</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="../static/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3"
-                               data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid"
-                             alt="">
-                        <div class="portfolio-info">
-                            <h4>Product 3</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="../static/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
-                               data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <img src="../static/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid"
-                             alt="">
-                        <div class="portfolio-info">
-                            <h4>Branding 3</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="../static/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
-                               data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                </div><!-- End Portfolio Container -->
-
-            </div>
-
-        </div>
-
-    </section><!-- /Portfolio Section -->
-
     <!-- Team Section -->
     <section id="team" class="team section">
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Team</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            <h2>团队介绍</h2>
+            <p>我们团队由经验丰富的研究人员组成，专注于水下图像处理与增强技术的研发，开发了PA-UIENet模型，致力于为各种水下应用场景提供最优质的解决方案。</p>
         </div><!-- End Section Title -->
 
         <div class="container">
@@ -616,66 +318,42 @@
                     <div class="team-member d-flex align-items-start">
                         <div class="pic"><img src="../static/assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Walter White</h4>
-                            <span>Chief Executive Officer</span>
-                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""> <i class="bi bi-linkedin"></i> </a>
-                            </div>
+                            <h4>燕庭轩</h4>
+                            <span>项目负责人</span>
+                            <p>专注于深度学习与水下图像处理技术，负责团队的总体规划与技术方向。</p>
                         </div>
                     </div>
                 </div><!-- End Team Member -->
 
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="team-member d-flex align-items-start">
-                        <div class="pic"><img src="../static/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="../static/assets/img/team/team-2.png" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Sarah Jhonson</h4>
-                            <span>Product Manager</span>
-                            <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""> <i class="bi bi-linkedin"></i> </a>
-                            </div>
+                            <h4>符镇侃</h4>
+                            <span>技术总监</span>
+                            <p>在水下光学和深度学习领域有丰富经验，负责双流网络模型的开发与测试。</p>
                         </div>
                     </div>
                 </div><!-- End Team Member -->
 
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="team-member d-flex align-items-start">
-                        <div class="pic"><img src="../static/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="../static/assets/img/team/team-4.png" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>William Anderson</h4>
-                            <span>CTO</span>
-                            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""> <i class="bi bi-linkedin"></i> </a>
-                            </div>
+                            <h4>赵网</h4>
+                            <span>产品经理</span>
+                            <p>擅长数据处理与图像增强算法，负责产品功能的设计和实现。</p>
                         </div>
                     </div>
                 </div><!-- End Team Member -->
 
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="team-member d-flex align-items-start">
-                        <div class="pic"><img src="../static/assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="../static/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Amanda Jepson</h4>
-                            <span>Accountant</span>
-                            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""> <i class="bi bi-linkedin"></i> </a>
-                            </div>
+                            <h4>刘昭维</h4>
+                            <span>算法工程师</span>
+                            <p>专注于模型训练与优化，负责图像增强算法的开发与优化。</p>
                         </div>
                     </div>
                 </div><!-- End Team Member -->
@@ -686,77 +364,14 @@
 
     </section><!-- /Team Section -->
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section light-background">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Pricing</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
-
-        <div class="container">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="pricing-item">
-                        <h3>Free Plan</h3>
-                        <h4><sup>$</sup>0<span> / month</span></h4>
-                        <ul>
-                            <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                            <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                            <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                            <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                            <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                        </ul>
-                        <a href="#" class="buy-btn">Buy Now</a>
-                    </div>
-                </div><!-- End Pricing Item -->
-
-                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="pricing-item featured">
-                        <h3>Business Plan</h3>
-                        <h4><sup>$</sup>29<span> / month</span></h4>
-                        <ul>
-                            <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                            <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                            <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                            <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                            <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                        </ul>
-                        <a href="#" class="buy-btn">Buy Now</a>
-                    </div>
-                </div><!-- End Pricing Item -->
-
-                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="pricing-item">
-                        <h3>Developer Plan</h3>
-                        <h4><sup>$</sup>49<span> / month</span></h4>
-                        <ul>
-                            <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                            <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                            <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                            <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                            <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                        </ul>
-                        <a href="#" class="buy-btn">Buy Now</a>
-                    </div>
-                </div><!-- End Pricing Item -->
-
-            </div>
-
-        </div>
-
-    </section><!-- /Pricing Section -->
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Testimonials</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            <h2>指导老师</h2>
+            <p>大连海事大学讲师</p>
         </div><!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -781,94 +396,12 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="../static/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
+                            <img src="../static/assets/img/testimonials/zhaozheng.jpg" class="testimonial-img"
                                  alt="">
-                            <h3>Saul Goodman</h3>
-                            <h4>Ceo &amp; Founder</h4>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
+                            <h3>赵正</h3>
                             <p>
                                 <i class="bi bi-quote quote-icon-left"></i>
-                                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                                <i class="bi bi-quote quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="../static/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img"
-                                 alt="">
-                            <h3>Sara Wilsson</h3>
-                            <h4>Designer</h4>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                            <p>
-                                <i class="bi bi-quote quote-icon-left"></i>
-                                <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                                <i class="bi bi-quote quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="../static/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img"
-                                 alt="">
-                            <h3>Jena Karlis</h3>
-                            <h4>Store Owner</h4>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                            <p>
-                                <i class="bi bi-quote quote-icon-left"></i>
-                                <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                                <i class="bi bi-quote quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="../static/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img"
-                                 alt="">
-                            <h3>Matt Brandon</h3>
-                            <h4>Freelancer</h4>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                            <p>
-                                <i class="bi bi-quote quote-icon-left"></i>
-                                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                                <i class="bi bi-quote quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="../static/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img"
-                                 alt="">
-                            <h3>John Larson</h3>
-                            <h4>Entrepreneur</h4>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                            <p>
-                                <i class="bi bi-quote quote-icon-left"></i>
-                                <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                                <span>PA-UIENet模型的设计将物理感知与深度学习相结合，有效解决了水下图像处理中的退化问题，展示了团队在科研创新方面的杰出能力。这项技术具有广阔的应用前景，特别是在水下探测和图像增强领域。</span>
                                 <i class="bi bi-quote quote-icon-right"></i>
                             </p>
                         </div>
@@ -880,185 +413,6 @@
 
         </div>
 
-    </section><!-- /Testimonials Section -->
-
-    <!-- Faq 2 Section -->
-    <section id="faq-2" class="faq-2 section light-background">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Frequently Asked Questions</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-                sit in iste officiis commodi quidem hic quas.</p>
-        </div><!-- End Section Title -->
-
-        <div class="container">
-
-            <div class="row justify-content-center">
-
-                <div class="col-lg-10">
-
-                    <div class="faq-container">
-
-                        <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                            <div class="faq-content">
-                                <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
-                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
-                                    purus non.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div><!-- End Faq item-->
-
-                        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-                            <div class="faq-content">
-                                <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                    velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
-                                    donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                                    cursus turpis massa tincidunt dui.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div><!-- End Faq item-->
-
-                        <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                            <div class="faq-content">
-                                <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
-                                    pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
-                                    Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
-                                    tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div><!-- End Faq item-->
-
-                        <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                            <div class="faq-content">
-                                <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                    velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
-                                    donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                                    cursus turpis massa tincidunt dui.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div><!-- End Faq item-->
-
-                        <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
-                            <i class="faq-icon bi bi-question-circle"></i>
-                            <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
-                            <div class="faq-content">
-                                <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in
-                                    est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
-                                    suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div><!-- End Faq item-->
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section><!-- /Faq 2 Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Contact</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-5">
-
-                    <div class="info-wrap">
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                            <i class="bi bi-geo-alt flex-shrink-0"></i>
-                            <div>
-                                <h3>Address</h3>
-                                <p>A108 Adam Street, New York, NY 535022</p>
-                            </div>
-                        </div><!-- End Info Item -->
-
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                            <i class="bi bi-telephone flex-shrink-0"></i>
-                            <div>
-                                <h3>Call Us</h3>
-                                <p>+1 5589 55488 55</p>
-                            </div>
-                        </div><!-- End Info Item -->
-
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                            <i class="bi bi-envelope flex-shrink-0"></i>
-                            <div>
-                                <h3>Email Us</h3>
-                                <p>info@example.com</p>
-                            </div>
-                        </div><!-- End Info Item -->
-
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-                                frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-
-                <div class="col-lg-7">
-                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-                          data-aos-delay="200">
-                        <div class="row gy-4">
-
-                            <div class="col-md-6">
-                                <label for="name-field" class="pb-2">Your Name</label>
-                                <input type="text" name="name" id="name-field" class="form-control" required="">
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="email-field" class="pb-2">Your Email</label>
-                                <input type="email" class="form-control" name="email" id="email-field" required="">
-                            </div>
-
-                            <div class="col-md-12">
-                                <label for="subject-field" class="pb-2">Subject</label>
-                                <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                            </div>
-
-                            <div class="col-md-12">
-                                <label for="message-field" class="pb-2">Message</label>
-                                <textarea class="form-control" name="message" rows="10" id="message-field"
-                                          required=""></textarea>
-                            </div>
-
-                            <div class="col-md-12 text-center">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                                <button type="submit">Send Message</button>
-                            </div>
-
-                        </div>
-                    </form>
-                </div><!-- End Contact Form -->
-
-            </div>
-
-        </div>
-
-    </section><!-- /Contact Section -->
-
 </main>
 
 <footer id="footer" class="footer">
@@ -1067,15 +421,8 @@
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-6">
-                    <h4>Join Our Newsletter</h4>
-                    <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-                    <form action="forms/newsletter.php" method="post" class="php-email-form">
-                        <div class="newsletter-form"><input type="email" name="email"><input type="submit"
-                                                                                             value="Subscribe"></div>
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-                    </form>
+                    <h4>加入我们的GitHub</h4>
+                    <link>https://github.com/Mriris/PA-UIENet</link>
                 </div>
             </div>
         </div>
@@ -1085,58 +432,52 @@
         <div class="row gy-4">
             <div class="col-lg-4 col-md-6 footer-about">
                 <a href="index.html" class="d-flex align-items-center">
-                    <span class="sitename">Arsha</span>
+                    <span class="sitename">PA-UINet</span>
                 </a>
                 <div class="footer-contact pt-3">
-                    <p>A108 Adam Street</p>
-                    <p>New York, NY 535022</p>
-                    <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                    <p><strong>Email:</strong> <span>info@example.com</span></p>
+                    <p>大连海事大学</p>
+                    <p>中国，辽宁省大连市</p>
+                    <p class="mt-3"><strong>电话:</strong> <span>15151306163</span></p>
+                    <p><strong>Email:</strong> <span>1394062614@qq.com</span></p>
                 </div>
             </div>
 
             <div class="col-lg-2 col-md-3 footer-links">
-                <h4>Useful Links</h4>
+                <h4>快速链接</h4>
                 <ul>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="#">主页</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="#">关于我们</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="#">优势</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="#">团队介绍</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-2 col-md-3 footer-links">
-                <h4>Our Services</h4>
+                <h4>我们的服务</h4>
                 <ul>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="#">图像增强</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="#">深度学习模型开发</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="#">数据处理</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="#">定制化解决方案</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-4 col-md-12">
-                <h4>Follow Us</h4>
-                <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-                <div class="social-links d-flex">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <h4>关注我们</h4>
+                <p>你可以在GitHub关注我们，了解最新动态</p>
             </div>
 
         </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Arsha</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>版权信息</span> <strong class="px-1 sitename">PA-UIENet.</strong> <span>保留所有权利</span></p>
         <div class="credits">
             <!-- All the links in the footer should remain intact. -->
             <!-- You can delete the links only if you've purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            设计由 PA-UIENet 团队制作
         </div>
     </div>
 
