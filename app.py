@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_file, redirect, url_for
+from flask import Flask, render_template, request, send_file, redirect, url_for, jsonify
 import os
 import torch
 from torchvision.utils import save_image
@@ -9,7 +9,7 @@ import numpy as np
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads/'  # 上传的图像保存路径
-app.config['ENHANCED_FOLDER'] = 'enhanced/'  # 增强后的图像保存路径
+app.config['ENHANCED_FOLDER'] = 'static/enhanced/'  # 增强后的图像保存路径
 
 # 确保文件夹存在
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
@@ -35,7 +35,7 @@ def index():
 @app.route('/enhance', methods=['POST'])
 def enhance_image():
     if 'image' not in request.files:
-        return redirect(url_for('index'))
+        return jsonify({'error': 'No image uploaded'}), 400
 
     # 保存上传的图像
     file = request.files['image']
@@ -49,11 +49,22 @@ def enhance_image():
         enhanced_img_tensor = generator(img_tensor)
 
     # 保存增强后的图像
-    enhanced_path = os.path.join(app.config['ENHANCED_FOLDER'], filename)
+    enhanced_filename = 'enhanced_' + filename
+    enhanced_path = os.path.join(app.config['ENHANCED_FOLDER'], enhanced_filename)
+    # 打印文件保存路径进行调试
+    print(f"Saving enhanced image to: {enhanced_path}")
+
+    # 保存增强后的图像
     save_image(enhanced_img_tensor[3], enhanced_path)
 
-    # 返回增强后的图像
-    return send_file(enhanced_path, mimetype='image/jpeg')
+    # 确认文件是否保存成功
+    if os.path.exists(enhanced_path):
+        print("File saved successfully!")
+    else:
+        print("Error: File not saved!")
+
+    # 返回增强后的图像路径
+    return jsonify({'image_url': '/static/enhanced/' + enhanced_filename})
 
 if __name__ == '__main__':
     app.run(debug=True)
