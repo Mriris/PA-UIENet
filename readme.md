@@ -28,7 +28,7 @@ PA-UIENet采用双流结构：
 ├── saved_models/             # 保存的模型权重
 ├── static/                   # 前端静态文件（CSS、JavaScript等）
 ├── templates/                # 前端HTML模板文件
-├── app.py                   # Flask应用入口，处理图像展示等
+├── app.py                    # Flask应用入口，处理图像展示等
 ├── requirements.txt          # 项目依赖项文件
 ├── run.py                    # 训练
 ├── test.ipynb                # 测试用Jupyter Notebook
@@ -54,15 +54,12 @@ PA-UIENet采用双流结构：
 请确保系统安装了以下依赖项：
 
 - Python 3.12
-- torch
+- Pytorch
 - numpy
-- scikit-image
-- torchvision
-- opencv-python
+- Opencv
 - Flask
-- Werkzeug
-- matplotlib
-- pillow
+- ······
+
 
 可以通过以下命令安装依赖：
 
