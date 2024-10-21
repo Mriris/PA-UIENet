@@ -54,15 +54,12 @@ PA-UIENet采用双流结构：
 请确保系统安装了以下依赖项：
 
 - Python 3.12
-- torch
+- Pytorch
 - numpy
-- scikit-image
-- torchvision
-- opencv-python
+- Opencv
 - Flask
-- Werkzeug
-- matplotlib
-- pillow
+- ······
+
 
 可以通过以下命令安装依赖：
 
